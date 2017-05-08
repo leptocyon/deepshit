@@ -1,0 +1,645 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wildlife are in Deep Shit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Deep shit report website" />
+	<meta name="keywords" content="manure wildlife biodiversity conservation environment CAFO livestock factory farm" />
+	<meta name="author" content="CBD|Dipika|GetTemplates.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Roboto+Mono" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto" rel="stylesheet">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+		<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	
+	<script>
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top1 = $('#sticky-anchor1').offset().top;
+    var text_top1 = $('#sticky-text1').offset().top;
+
+    var div_top2 = $('#sticky-anchor2').offset().top;
+    var text_top2 = $('#sticky-text2').offset().top;
+
+    console.log(window_top)
+    console.log(div_top2)
+
+
+    if (window_top > div_top1) {
+    	if (window_top < text_top1) {
+	        $('#sticky1').css('margin-top', 0);
+	        $('#sticky1').css('top', 0);
+	        $('#sticky1').css('position', 'fixed');
+	        $('#sticky-anchor1').height($('#sticky1').outerHeight());
+    	}
+    	else  {
+    		$('#sticky1').css('margin-top', text_top1 - window_top);
+    	}
+
+    } else {
+    	$('#sticky1').css('margin-top', 'auto');
+	    $('#sticky1').css('top', 'auto');
+	    $('#sticky-anchor1').height('auto');
+        $('#sticky1').css('position', 'relative');
+    }
+
+    if (window_top > div_top2) {
+    	if (window_top < text_top2) {
+	        $('#sticky2').css('margin-top', 0);
+	        $('#sticky2').css('top', 0);
+	        $('#sticky2').css('position', 'fixed');
+	        $('#sticky-anchor2').height($('#sticky2').outerHeight());
+    	}
+    	else  {
+    		$('#sticky2').css('margin-top', text_top2 - window_top);
+    	}
+
+    } else {
+    	$('#sticky2').css('margin-top', 'auto');
+	    $('#sticky2').css('top', 'auto');
+	    $('#sticky-anchor2').height('auto');
+        $('#sticky2').css('position', 'relative');
+    }
+
+}
+
+$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+
+var dir = 1;
+var MIN_TOP = 200;
+var MAX_TOP = 350;
+
+function autoscroll() {
+    var window_top = $(window).scrollTop() + dir;
+    if (window_top >= MAX_TOP) {
+        window_top = MAX_TOP;
+        dir = -1;
+    } else if (window_top <= MIN_TOP) {
+        window_top = MIN_TOP;
+        dir = 1;
+    }
+    $(window).scrollTop(window_top);
+    window.setTimeout(autoscroll, 100);
+}
+
+    </script>
+
+            <script>
+     $(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
+
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+
+                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                        $(this).get(0).play();
+                    } else {
+                        $(this).get(0).pause();
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
+</script>	
+
+<style>
+		
+<style>
+.testvid {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+.iframe2 {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0 auto;
+
+}
+
+.iframe3 {
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 200vh;
+    margin-right: 0;
+        min-width: 100%;
+    min-height: 100%;
+       margin-left: 10vw;
+
+}
+
+#sticky1 {
+  
+    border-radius: 0.5ex;
+}
+
+#sticky1.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#sticky2 {
+  
+    border-radius: 0.5ex;
+}
+
+#sticky2.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.highlight-front a{ 
+   color: white;
+}
+
+.parcont{
+	height:100vh;
+	overflow:hidden;
+}
+.parvid {
+   min-width:100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:45%;
+    position:relative;
+    height:0;
+}
+.facebook-responsive iframe {
+   padding-left:15vw;
+   left:0;
+    top:0;
+    height:100%;
+    width:85%;
+    position:absolute;
+}
+</style>
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 text-left">
+					<div id="gtco-logo"><a href="index.html"><span></span></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>						
+						<li><a href="index.html">The Story</a></li>
+						<li><a href="https://dspace.crappyfiles.com/report.pdf" target="_blank">Full Report</a></li>
+						<li><a href="https://biologicaldiversity.salsalabs.com/o/2167/p/dia/action4/common/public/index.sjs?action_KEY=17589" target="_blank">Petition</a></li>
+						<li><a href="https://center.maps.arcgis.com/apps/webappviewer/index.html?id=aba4275e0d5b4f78ae3e1a1f5fbb46d9" target="_blank">Map</a></li>
+						<li><a href="https://rem.host/dip/" target="_blank">Species Gallery</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header class="gtco-cover" style="background-image:url(images/headerimg.jpg)" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8  text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+							<span class="date-post"></span>
+							<h1 class="mb30"><a href="#start"><span style="color:white;  font-family: Bebas Neue; font-weight: 500;">Wildlife Are in Deep Shit<span style="color: red">.</span></span></a></h1>
+							<p><a href="#start"><span style="background-color: rgba(0,0,0,0.5); color: #94a79a; padding-top: 5px; padding-bottom: 5px; padding-left:20px; padding-right:20px; font-family: Roboto Mono, serif; font-weight:200; font-size:18px; line-height: 1.9em;  -webkit-box-decoration-break: clone; box-decoration-break: clone;">How <span style="color: red; font-weight: bold;">Factory Farm Pollution</span> Threatens Imperiled Species</span></a>
+							<br><br><br>
+							<a href="#start"><img src="https://dspace.crappyfiles.com/darrow.png"></img></a></p>
+							<a href="#" class="text-link"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<body>
+	
+	<div style="padding-top:0px !important" id="gtco-main" class="centered">
+
+	
+
+
+	<div  class="container">
+	<div class="row">
+	<span class="field-content highlight-front"><a style="display:inline-block" name="start" id="start">start<br><br><br></a></span>
+
+	<div class="col-md-8 col-sm-8 centered text-center">
+
+	<div class="facebook-responsive">
+	<p>
+
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdipika.kadaba%2Fvideos%2Fvb.513174580%2F10155287751464581%2F&" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+ </p>
+</div>
+</div>
+
+
+<div class="row" style="padding-bottom:4vw;">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered text-center">
+<p>
+
+	<span class="firstcharacter">F</span>arm animals produce an astonishing amount of waste — about <span style="font-weight:bold">1.4 trillion pounds a year in the United States alone.</span> This waste, largely produced in industrial animal-agriculture operations, also called "factory farms," contributes to climate change and pollutes waterways, natural habitats and ecosystems, putting wildlife in deep sh*t.  
+  <br>
+  <br>
+Sensitive wildlife species are the overlooked victims of America's factory farms. See our <a href="">species page</a> to learn more about wildlife harmed by livestock manure.
+
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div>
+
+<div class="container" style="width:100%">
+<div id="sticky-anchor1"></div>
+<div  style="z-index:2000 !important;" id="sticky1">
+<div >
+<iframe class="iframe2" style="float:middle;" src="https:/dspace.crappyfiles.com/video1.html" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+
+<div  class="container" id="sticky-text1" >
+<div style="z-index:99999 !important;" class="row">
+<div style="z-index:99999 !important;" class="col-md-4 col-sm-4 parallaxoverlay">
+<span style="font-size:16px; font-weight: 300; text-align:center; background-color: rgba(0, 0, 0, 0.7); color:white; padding:0.1em 0.5em 0.1em 0.5em; -webkit-box-decoration-break: clone; box-decoration-break: clone;">Monarch butterflies, Delmarva fox squirrels, green sea turtles and yellow-billed cuckoos are all threatened by industrial animal waste in their habitats.</span>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="gtco-main">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered padcont text-center">
+<p><br>Wildlife across the United States is threatened by industrial meat and dairy production: 29 states identify factory farms as the leading contributor to water pollution. </p>
+</div>
+</div>
+
+
+<div>
+<video width="100%" preload="auto" x-webkit-airplay="allow" loop="loop" playsinline loop muted poster="http://db1fskrd22hhr.cloudfront.net/lagoons.jpg">
+  <source src="https://dspace.crappyfiles.com/lagoons.webm" type="video/webm">
+   <source src="https://dspace.crappyfiles.com/lagooncrop.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+Your browser does not support the video tag.
+</video>
+<br>
+<span style="font-size:12px;">
+Manure lagoons of swine farms in a section of the Cape Fear watershed.
+</span>  
+</div>
+
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered padcont text-center">
+<p>  Animal waste usually goes virtually untreated in open, pit-like holes or mountainous piles. Raw animal waste is then spread or sprayed onto nearby fields, transferring toxic materials — such as pesticides, pharmaceuticals, pathogens, heavy metals and nutrient pollution — into the soil. Sometimes the waste is even dumped into waterways intentionally.
+ </p>
+</div>
+</div>
+
+
+<div>
+<video width="100%" preload="auto" x-webkit-airplay="allow" loop="loop" playsinline loop muted poster="http://db1fskrd22hhr.cloudfront.net/spraycrop.jpg">
+  <source src="https://dspace.crappyfiles.com/spraycrop.webm" type="video/webm">
+   <source src="https://dspace.crappyfiles.com/spraycrop.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+Your browser does not support the video tag.
+</video>
+<br>
+<span style="font-size:12px;">
+From top left in clock-wise order: 1) Aerial view of a manure lagoon by cattle feedlot, 2) liquid waste being sprayed on agricultural field, 3) manure pit, 4) tanker spraying liquid waste on agricultural field.
+</span>  
+</div>
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10  col-centered padcont text-center">
+<p> The pharmaceuticals and pesticides fed to factory farm animals can enter the groundwater through their waste, and contribute to the spread of antibiotic-resistant bacteria and incidents of endocrine and reproductive disruption in people and wildlife alike. 
+ </p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="container" style="width:100%">
+<div id="sticky-anchor2"></div>
+<div class="videoContainer" style="height:56.25vw" id="sticky2">
+<video class="centre" width="100%" max-width="100%" autoplay playsinline muted mute loop codecs="avc1.4D401E, mp4a.40.2">
+ <source src="https://dspace.crappyfiles.com/Comp_2.webm" type="video/webm">
+   <source src="https://dspace.crappyfiles.com/Comp_2.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+
+   
+Your browser does not support the video tag.
+</video>
+</div>
+</div> 
+<div class="container" id="sticky-text2">
+<div class="row">
+<div class="col-md-4 col-sm-4 parallaxoverlay">
+<span style="font-size:16px; font-weight: 300; text-align:center; background-color: rgba(0, 0, 0, 0.7); color:white; padding:0.1em 0.5em 0.1em 0.5em; -webkit-box-decoration-break: clone; box-decoration-break: clone;">In 2016 Hurricane Matthew flooded many of North Carolina's industrial hog farms and spilled waste from massive manure lagoons into nearby waterways.</span>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="gtco-main">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10  col-centered padcont text-center">
+<p> This pollution is driven by the super-sized American appetite for meat and dairy. To meet the demand, livestock production has evolved from small family farms to massive industrial animal factories with enormous concentrations of noxious environmental pollutants.
+ </p>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-12 col-sm-12 col-centered text-center">
+<p><img style="width:100%; max-height:100vh" src="http://dspace.crappyfiles.com/mapchart3.jpg"></p>
+</div>
+</div>
+
+<p><span style="font-size:12px;">
+Manure from industrial animal operations is produced in vastly larger quantities than human excrement in regions where livestock farming is common.</span></p>
+
+
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered padcont text-center">
+<div style="margin-top:60px">
+<p> <a href="">Wildlife in Deep Shit</a>, a report by the Center for Biological Diversity, highlights the top 10 places in the United States where wildlife are in deep sh*t from the environmental destruction caused by factory farms. This map, the first of its kind, shows manure data and the threatened wildlife that may be affected by it on a county level.
+ </p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12 text-center">
+
+
+
+<div class="row">
+<iframe style="float:middle" src="http://www.arcgis.com/apps/MapJournal/index.html?appid=de588f6cdbdd488a8753c95ca7a4fc85" width="100%" height="600px" align="middle"></iframe>
+</div>
+
+</div>
+</div>
+</div>
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+	
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered padcont text-center">
+<p> Livestock manure also contributes to climate change: According to the FAO, it's responsible for more than a quarter of animal agriculture's global greenhouse gases. 
+ </p>
+</div>
+</div>
+
+<div>
+<video style="background-color: transparent !important; display:block; margin:auto;" width="80%" max-height="100vh" autoplay playsinline muted loop codecs="avc1.4D401E, mp4a.40.2">   
+
+<source src="https://dspace.crappyfiles.com/manurefridge3.webm" type="video/webm" codecs="avc1.4D401E, mp4a.40.2">
+
+   <source src="https://dspace.crappyfiles.com/manurefridge.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+Your browser does not support the video tag.
+</video>
+</div>
+
+
+	
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-centered padcont text-center">
+<p> There are very few meaningful legal protections for wildlife or humans from the damages caused by factory farms and their waste. Most factory farms aren't even required by the EPA to operate under a Clean Water Act permit. 
+ </p>
+</div>
+</div>
+
+<div class="one-third entry animate-box" data-animate-effect="fadeIn">
+<p><h1>Help get wildlife and our waterways out of deep sh*t:</h1>
+
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="row text-center one-third entry animate-box" data-animate-effect="fadeIn">
+
+<div class="col-md-3 col-sm-3 col-xs-3">
+<image style="width:100%;" src="images/signpetition.jpg"></image>
+Tell the EPA to regulate factory farms and protect our water.
+</div>
+<div class="col-md-3 col-sm-3 col-xs-3">
+<image style="width:100%;" src="images/eatresponsibly.jpg"></image>
+Eat more plant-based meals and less meat and dairy to reduce the demand for factory farm production.
+</div>
+<div class="col-md-3 col-sm-3 col-xs-3">
+<image style="width:100%;" src="images/sharevid.jpg"></image>
+Share this video about the impact of factory farm manure on wildlife.
+</div>
+
+<br><br><br><br><br>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="text-center one-third entry animate-box" data-animate-effect="fadeIn">
+<p><h3>Share on social media:</h3>
+<br>(Placeholders)
+
+</p>
+</div>
+
+<div style="padding:5px" class="row text-center  entry animate-box" data-animate-effect="fadeIn">
+
+<div class="col-md-2 col-sm-4 col-xs-6">
+<image style="width:100%;" src="http://www.takeextinctionoffyourplate.com/images/EFBBQinfographic190.jpg"></image>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<image style="width:100%;" src="http://www.takeextinctionoffyourplate.com/images/ESmap190.jpg"></image>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<image style="width:100%;" src="http://www.takeextinctionoffyourplate.com/images/MeatstinctionInfo_190_Nov2014.jpg"></image>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<image style="width:100%;" src="http://www.takeextinctionoffyourplate.com/images/WildlifeServices190.jpg"></image>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<image style="width:100%;" src="http://www.takeextinctionoffyourplate.com/images/ShareablesThumb.jpg"></image>
+</div>
+<br><br><br><br><br>
+</div> 
+
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+
+	
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="container">
+			
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">Center for Biological Diversity<br>&copy; 2017 </small> 
+						<small class="block"> <a href="http://" target="_blank">Image Credits</a></small>
+					</p>
+					<p>
+						<ul class="gtco-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+
+
+	</body>
+</html>
